@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Лабораторная работа №4</h1>
+    <p>HTML + JavaScript — формы и валидация</p>
+
+    <div class="menu">
+        <button onclick="showForm('basic')">Базовый уровень</button>
+        <button onclick="showForm('medium')">Средний уровень</button>
+        <button onclick="showForm('advanced')">Повышенный уровень</button>
+    </div>
+
+    <!-- БАЗОВЫЙ УРОВЕНЬ -->
+    <section id="basic" class="form-section">
+        <h2>Базовый уровень — задание №1</h2>
+
+        <form id="basicForm">
+
+            <label for="basicName">ФИО:</label>
+            <input type="text" id="basicName">
+
+            <label for="basicEmail">E-mail:</label>
+            <input type="email" id="basicEmail">
+
+            <label for="basicCourse">Курс:</label>
+            <select id="basicCourse">
+                <option value="">Выберите курс</option>
+                <option value="1">1 курс</option>
+                <option value="2">2 курс</option>
+                <option value="3">3 курс</option>
+                <option value="4">4 курс</option>
+            </select>
+
+            <label class="checkbox">
+                <input type="checkbox" id="basicAgree">
+                Я согласен с правилами
+            </label>
+
+            <button type="submit">Проверить</button>
+
+            <p id="basicMessage"></p>
+
+        </form>
+    </section>
+
+
+    <!-- СРЕДНИЙ УРОВЕНЬ -->
+    <section id="medium" class="form-section">
+
+        <h2>Средний уровень — задание №7</h2>
+
+        <form id="mediumForm">
+
+            <label for="login">Логин:</label>
+            <input type="text" id="login">
+
+            <label for="mediumEmail">E-mail:</label>
+            <input type="email" id="mediumEmail">
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password">
+
+            <label for="repeatPassword">Повтор пароля:</label>
+            <input type="password" id="repeatPassword">
+
+            <button type="submit">Зарегистрироваться</button>
+
+            <p id="mediumMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- ПОВЫШЕННЫЙ УРОВЕНЬ -->
+    <section id="advanced" class="form-section">
+
+        <h2>Повышенный уровень — задание №19</h2>
+
+        <form id="advancedForm">
+
+            <label for="advancedName">ФИО:</label>
+            <input type="text" id="advancedName">
+
+            <label for="advancedEmail">E-mail:</label>
+            <input type="email" id="advancedEmail">
+
+            <label for="advancedCourse">Курс:</label>
+            <select id="advancedCourse">
+                <option value="">Выберите курс</option>
+                <option value="1">1 курс</option>
+                <option value="2">2 курс</option>
+                <option value="3">3 курс</option>
+                <option value="4">4 курс</option>
+            </select>
+
+            <label for="direction">Направление:</label>
+            <select id="direction">
+                <option value="">Выберите направление</option>
+                <option value="programming">Программирование</option>
+                <option value="design">Дизайн</option>
+                <option value="marketing">Маркетинг</option>
+            </select>
+
+            <p>Навыки (выберите минимум два):</p>
+
+            <label class="checkbox">
+                <input type="checkbox" name="skill" value="HTML">
+                HTML
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="skill" value="CSS">
+                CSS
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="skill" value="JavaScript">
+                JavaScript
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" name="skill" value="Python">
+                Python
+            </label>
+
+            <label for="motivation">Мотивационный текст:</label>
+            <textarea id="motivation" rows="6"></textarea>
+
+            <p id="counter">Символов: 0</p>
+
+            <button type="submit">Подать заявку</button>
+
+            <p id="advancedMessage"></p>
+
+        </form>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
